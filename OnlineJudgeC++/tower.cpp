@@ -1,4 +1,3 @@
-/*
 #include<iostream>
 using namespace std;
 int main(){
@@ -22,7 +21,7 @@ int main(){
             }
         }
     }
-    //****************************½øĞĞ²Ù×÷ÒÔ¼°¸üĞÂsºÍm²ÎÊı*************************************
+    /***************************è¿›è¡Œæ“ä½œä»¥åŠæ›´æ–°så’Œmå‚æ•°*************************************
     s=0;
     int minCount,maxCount,opNum;
     while(s<k&&(a[n-1][0]-a[0][0])>=2){
@@ -32,7 +31,7 @@ int main(){
         while(maxCount<n&&a[n-1-maxCount][0]==a[n-1][0])maxCount++;
         opNum=(maxCount<minCount)?maxCount:minCount;
         if(s+opNum>k)break;
-        //¼ÇÂ¼²Ù×÷
+        //è®°å½•æ“ä½œ
         for(int j=0;j<opNum;j++){
             (a[minCount-1-j][0])++;
             (a[n-maxCount+j][0])--;
@@ -51,7 +50,7 @@ int main(){
 
  * tower.cpp
  *
- *  Created on: 2019Äê1ÔÂ4ÈÕ
+ *  Created on: 2019å¹´1æœˆ4æ—¥
  *      Author: Administrator
 
 
@@ -97,4 +96,3 @@ int main(int argc, char **argv) {
 	return 0;
 }
 
-*/

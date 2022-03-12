@@ -1,7 +1,7 @@
 /*
  * hignmath.cpp
  *
- *  Created on: 2019Äê1ÔÂ2ÈÕ
+ *  Created on: 2019ï¿½ï¿½1ï¿½ï¿½2ï¿½ï¿½
  *      Author: wolf
  */
 #include<iostream>

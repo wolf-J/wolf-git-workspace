@@ -1,7 +1,7 @@
 /*
  * addandmultiply.cpp
  *
- *  Created on: 2019Äê1ÔÂ2ÈÕ
+ *  Created on: 2019å¹´1æœˆ2æ—¥
  *      Author: wolf
  */
 

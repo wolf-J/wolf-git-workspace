@@ -4,25 +4,25 @@ using namespace std;
     void solve(int n, int m, long long k) {
         vector<char> x;//
         while (n && m) {
-            //Ã¿´Îµü´úÎÊÌâ¹æÄ£Ëõ¼õÒ»¸öµ¥Î»
-            ////ÅÅÁÐ×éºÏ:¼ÙÉèµ±Ç°ÐòÁÐÊ××Ö·ûÎªa£¬Ê£ÏÂn-1¸öa·ÅÔÚÊ£ÏÂn - 1 +m ¸öÎ»ÖÃ¹²ÓÐµÄ¿ÉÄÜÊý
+            //æ¯æ¬¡è¿­ä»£é—®é¢˜è§„æ¨¡ç¼©å‡ä¸€ä¸ªå•ä½
+            ////æŽ’åˆ—ç»„åˆ:å‡è®¾å½“å‰åºåˆ—é¦–å­—ç¬¦ä¸ºaï¼Œå‰©ä¸‹n-1ä¸ªaæ”¾åœ¨å‰©ä¸‹n - 1 +m ä¸ªä½ç½®å…±æœ‰çš„å¯èƒ½æ•°
             long long count = 1;
-            for (int i = 0; i < n - 1; i++) {//Çó×éºÏÊý
+            for (int i = 0; i < n - 1; i++) {//æ±‚ç»„åˆæ•°
                 count *= n - 1 + m - i;
                 count /= (i + 1);
-                if (count > k)break;//·ÀÖ¹Ô½½ç¡£count>k¾Í¿ÉÒÔÍË³ö¼ÆËãÁË
+                if (count > k)break;//é˜²æ­¢è¶Šç•Œã€‚count>kå°±å¯ä»¥é€€å‡ºè®¡ç®—äº†
             }
-            if (k <= count) {//Èç¹ûkÐ¡ÓÚµÈÓÚcount£¬Ôò±íÃ÷Ê××Ö·ûµÄÈ·Ó¦Îªa
+            if (k <= count) {//å¦‚æžœkå°äºŽç­‰äºŽcountï¼Œåˆ™è¡¨æ˜Žé¦–å­—ç¬¦çš„ç¡®åº”ä¸ºa
                 x.push_back('a');
-                n--;//ÎÊÌâËõ¼õÎª n-1¸öaºÍm¸öz ÖÐÕÒµÚk´ó
+                n--;//é—®é¢˜ç¼©å‡ä¸º n-1ä¸ªaå’Œmä¸ªz ä¸­æ‰¾ç¬¬kå¤§
             }
             else {
                 x.push_back('z');
-                m--;//ÎÊÌâËõ¼õÎª n-1¸öaºÍm¸öz ÖÐÕÒµÚk-count´ó
+                m--;//é—®é¢˜ç¼©å‡ä¸º n-1ä¸ªaå’Œmä¸ªz ä¸­æ‰¾ç¬¬k-countå¤§
                 k -= count;
             }
         }
-        //Ñ­»·½áÊøºó£¬Ê£Óà×ÓÐòÁÐÖ»´æÔÚ"aa..aaa" »ò "zz..zzz"1ÖÖÇé¿ö
+        //å¾ªçŽ¯ç»“æŸåŽï¼Œå‰©ä½™å­åºåˆ—åªå­˜åœ¨"aa..aaa" æˆ– "zz..zzz"1ç§æƒ…å†µ
         if (k != 1) {//
             cout << -1;
             return;
