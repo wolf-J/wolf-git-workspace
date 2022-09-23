@@ -1,0 +1,12 @@
+[alias]
+        br = branch
+        ci = commit
+        rb = rebase
+        sw = switch
+        ft = fetch
+        fta = fetch --all
+        cp = cherry-pick
+        pl = pull
+        ps = push
+        mr = merge
+        st = status
