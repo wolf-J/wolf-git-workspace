@@ -10,8 +10,8 @@ public class AESTester {
 
     static {
         try {
-            key = "3HBhJdf1e989mQYGW3Sdiw==";
-            //key = "ZyZXJEyouSqVUcBqhjNh515fLeni09z90EW/i9WuOXc=";
+            //key = "3HBhJdf1e989mQYGW3Sdiw==";
+            key = "ZyZXJEyouSqVUcBqhjNh515fLeni09z90EW/i9WuOXc=";
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -31,7 +31,7 @@ public class AESTester {
 
     static void decryptFile() throws Exception {
         String sourceFilePath = "/Users/huangjiang/Downloads/common-2.encrypt";
-        String destFilePath = "common-128";
+        String destFilePath = "common-128.zip";
         AESUtils.decryptFile(key, sourceFilePath, destFilePath);
     }
 
